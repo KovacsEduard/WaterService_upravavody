@@ -327,6 +327,16 @@ body{
     }
 }
 
+@media (max-width:450px){
+    .cardfull{
+        width: 91.2% !important;
+    }
+    
+    .card{
+        width: 94% !important;
+    }
+}
+
 .row2{
     width: 48% !important;
 
