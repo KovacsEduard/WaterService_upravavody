@@ -1,0 +1,361 @@
+*{
+    color: white;
+}
+
+
+/* header */
+
+nav{
+    width: 100%;
+    background-color: rgba(0, 51, 255, 0.161);
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+nav ul{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+nav ul li:hover{
+    background-color: rgba(0, 69, 230, 0.22);
+    cursor: pointer;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.toggle{
+    width: 100%;
+    padding: 10px 20px;
+    text-align: right;
+    box-sizing: border-box;
+    font-size: 20px;
+    display: none;
+}
+
+@media (max-width:600px){
+    #logoimg{
+        width: 80% !important;
+    }
+
+    #numheader{
+        width: 98% !important;
+    }
+}
+
+@media (max-width:768px){
+    .toggle{
+        display: block;
+    }
+
+    nav ul{
+        width: 100%;
+        display: none;
+    }
+
+    nav ul li{
+        display: block;
+        text-align: center;
+    }
+
+    .active{
+        display: block;
+    }
+
+    #numheader{
+        text-align: center;
+        width: 99%;
+        position: inherit !important;
+    }
+
+    #logo{
+    width: 80%;    
+    }
+
+    #logodiv{
+        text-align: center;
+    }
+
+    #logoandnumheader{
+        display: block !important;
+    }
+
+    #logoimg{
+        width: 60%;
+    }
+}
+
+.bar {
+    width: 30px;
+    height: 4px;
+    background-color: rgb(0, 153, 255);
+    margin: 6px 0;
+}
+
+.menu{
+        width: fit-content;
+        transition: all ease 0.3s;
+}
+
+.menu:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#logoandnumheader{
+    height: fit-content;
+    display: flex;
+}
+
+#numheader{
+    position: absolute;
+    right: 0;
+    padding-right: 5%;
+    font-size: 15px;
+}
+
+#selectedmenu{
+    color: rgb(0, 229, 255);
+}
+
+.zlandbt{
+    color: rgb(0, 191, 255);
+}
+
+header{
+    padding-top: 10px;
+}
+
+
+
+/* paralax */
+
+body{
+    background-image: url(photos/terry-vlisidis-De7Ut3NvoUU-unsplash.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 90%;
+    padding-left: 5%;
+}
+
+
+
+/* footer */
+
+#footer1{
+    background: rgba(0, 41, 106, 0.803);
+    width: 100%;
+    display: flex;
+    border-top: rgba(255, 255, 255, 0.805) 1px solid;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-top: 50px;
+}
+
+#footer1 #ul1{
+    list-style: none;
+    margin: 30px 0 20px 5%;
+    font-size: 15px;
+}
+
+#footer1 #ul2{
+    list-style: none;
+    font-size: 15px;
+    margin: 30px 0 20px 0;
+}
+
+#footer1 #ul1 li{
+    margin-bottom: 20px;
+}
+
+.fn{
+    margin-bottom: 5px;
+}
+
+#fm{
+    margin-bottom: 20px;
+}
+
+
+@media (max-width: 600px) {
+    #footer2 {
+      display: block !important;
+    }
+  
+      #footer1{
+          display: none !important;
+      }
+  }
+  
+  @media (min-width: 601px){
+      #footer2{
+          display: none !important;
+        }
+        
+        #footer1{
+            display: block !important;
+            display: flex !important;
+        }
+  }
+  
+  #footer1, #footer2{
+      display: none;
+  }
+
+
+#footer2{
+    background: rgba(0, 41, 106, 0.803);
+    width: 100%;
+    display: flex;
+    border-top: rgba(255, 255, 255, 0.805) 1px solid;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-top: 50px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+#footer2 #ul3{
+    list-style: none;
+    margin: 30px 0 40px 0;
+    font-size: 15px;
+    text-align: center;
+    margin-right: 5%;
+}
+
+#footer2 #ul4{
+    list-style: none;
+    font-size: 15px;
+    margin: 30px 0 20px 0;
+    text-align: center;
+    margin-right: 5%;
+}
+
+#footer2 #ul3 li{
+    margin-bottom: 5px;
+
+}
+#footer2 #ul4 li{
+    margin-bottom: 5px;
+}
+
+.fm{
+    margin-bottom: 10px !important;
+}
+
+.email{
+    color: rgb(0, 191, 255);
+}
+
+
+.hp{
+    background-color: rgb(0, 54, 85);
+    color: rgb(69, 224, 255);
+    padding: 20px 10px;
+    border-top: 1px white solid;
+    border-bottom: 1px white solid;
+    font-size: 20px;
+}
+
+#lih{
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+    padding: 0px 10px;
+}
+
+#p ul{
+    list-style: square;
+    font-size: 14px;
+}
+
+.hp2{
+    color: rgb(69, 224, 255);
+    font-size: 16px;
+    border-top: 1px white solid;
+    border-bottom: 1px solid white;
+    padding: 20px 10px;
+}
+
+.cards{
+    margin-top: 30px;
+}
+
+.cardrow{
+    display: flex;
+}
+
+.card{
+    border: white 1px solid;
+    padding: 0 10px;
+    width: 33%;
+}
+
+.cardtext{
+    font-size: 16px;
+    color: rgb(69, 224, 255);
+}
+
+.card img{
+    width: 100%;
+}
+
+@media (max-width:550px){
+    .cardfull{
+        width: 96% !important;
+    }
+
+    .card{
+        width: 96%;
+    }
+
+    .cardrow{
+        display: initial !important;
+    }
+}
+
+.row2{
+    width: 48% !important;
+
+}
+
+.row2div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.row10div{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.row10{
+    width: 19% !important;
+    margin-top: 10px;
+}
+
+.cardfull{
+    border: white 1px solid;
+    padding: 0 10px 0 20px;
+    width: 100%;
+}
+
+.cardtextfull{
+    font-size: 16px;
+    color: rgb(69, 224, 255);
+    text-align: center;
+}
