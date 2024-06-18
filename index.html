@@ -33,9 +33,11 @@
 				<li><a href="https://kovacseduard.github.io/WaterService/">O nás</a></li>
 				<li><a id="selectedmenu" href="https://kovacseduard.github.io/WaterService_upravavody/">Úprava vody</a></li>
 				<li><a href="https://kovacseduard.github.io/WaterService_cerpaciesystemy/">Cerpacie systémy</a></li>
+				 <li><a href="">Reverzné osmózy</a></li>
 				<li><a href="">Instalacie</a></li>
 				<li><a href="">Bazénová technologia</a></li>
 				<li><a href="">Hydreologia</a></li>
+				<li id="cart"><a href="https://www.pumpakysuce.sk/" target="_blank" class="fa-solid fa-cart-shopping" id="shopping-cart"></a></li>
 			</ul>
 		</nav>
 	</header>
@@ -277,6 +279,35 @@
 			})
 		})
 	</script>
+
+	
+	    <!-- scroll-up -->
+
+    <script>
+        const goToTopButton = document.getElementById("page-up");
+
+        window.onscroll = () => {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            if (
+                document.body.scrollTop > 300 ||
+                document.documentElement.scrollTop > 300
+            ) {
+                goToTopButton.style.display = "block";
+            } else {
+                goToTopButton.style.display = "none";
+            }
+        }
+        goToTopButton.addEventListener("click", () => {
+            goToTopButton.style.display = "none";
+            window.scroll({
+                top: 0,
+                behavior: "smooth",
+            });
+        });
+    </script>
 
 </body>
 
